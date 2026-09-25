@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+/*style body*/
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d1f2eb;
+}
+/*style from*/
+form{
+    width: 450px;
+    padding: 30px;
+    background-color: #d6e6f3;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0, 0.15);
+}
+/*style title-h1*/
+h1{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+/* style form-group*/
+.form-group{
+    margin-bottom: 20px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+ font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Radio și checkbox */
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Radio și checkbox */
+.form-group input[type="radio"] + label,
+.form-group input[type="checkbox"] + label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+
+/* Butoane */
+.button-group {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.button-group button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transform: 0.3s;
+    
+}
+
+.button-group button[type="submit"] {
+ background: linear-gradient( #17b694, #4aa3df);
+    color: white;
+}
+
+.button-group button[type="reset"]{
+    background-color: white;
+    color: black;
+}

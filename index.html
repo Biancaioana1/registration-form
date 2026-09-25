@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form>
+      <h1>Registration Form</h1>
+      <!--form group nr.1-->
+      <div class="form-group">
+        <label for="username">User Name:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your user name"
+        />
+      </div>
+      <!--form group nr.2-->
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+      </div>
+      <!--form group nr.3-->
+      <div class="form-group">
+        <label for="userpassword">Password:</label>
+        <input
+          type="password"
+          id="userpassword"
+          name="userpassword"
+          placeholder="Enter your Password"
+        />
+      </div>
+      <!--form group nr .4-->
+      <div class="form-group">
+        <label for="confirmpassword">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirmpassword"
+          name="confirmpassword"
+          placeholder="Enter your confirm password"
+        />
+      </div>
+      <!--section user type-->
+      <div class="form-group">
+        <p>User Type:</p>
+        <input type="radio" id="student" name="usertype" value="student" />
+        <label for="student">Student</label>
+        <input type="radio" id="teacher" name="usertype" value="teacher" />
+        <label for="teacher">Teacher</label>
+      </div>
+      <!--section interests-->
+      <div class="form-group">
+        <p>Interests:</p>
+        <input type="checkbox" id="sports" name="interests" value="sports" />
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music" />
+        <label for="music">Music</label>
+        <input
+          type="checkbox"
+          id="technology"
+          name="interests"
+          value="technology"
+        />
+        <label for="technology">Technology</label>
+      </div>
+      <!--section country-->
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+          <option value="romania">Romania</option>
+          <option value="germany">Germany</option>
+          <option value="france">France</option>
+          <option value="italy">Italy</option>
+          <option value="spain">Spain</option>
+        </select>
+      </div>
+      <!--section button-->
+      <div class="button-group">
+        <button type="submit">Sign Up</button>
+        <button type="reset">Clear</button>
+      </div>
+    </form>
+  </body>
+</html>
